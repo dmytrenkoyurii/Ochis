@@ -12,7 +12,7 @@ html,
 body {
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .box {
@@ -22,7 +22,11 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    color: $text;
+    color: #000000;
+}
+
+h1 {
+    margin: 0;
 }
 
 ul,
