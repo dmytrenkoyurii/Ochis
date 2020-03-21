@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 
@@ -53,14 +54,16 @@
     <div class="slide" style="background-image: url(images/header-slide.jpg);">
         <div class="container">
             <div class="header-slide">
-                <h1 class="slide__inner-head">
+                <h1 class="slide__inner-head animated fadeInRight">
                     Glasses
                 </h1>
-                <div class="slide__inner-text">
-                    New line of ecological coffee eyewear: feel the real breath of nature
+                <div>
+                    <p class="slide__inner-text animated fadeInRight">
+                        New line of ecological coffee eyewear: feel the real breath of nature
+                    </p>
                 </div>
                 <a class="slide__inner-down" href="#down">
-                    <div class="slide__inner-skrol">
+                    <div class="slide__inner-skrol animated bounceInDown">
                     </div>
                 </a>
             </div>
@@ -69,7 +72,6 @@
     <!-- ABOUT -->
     <section class="about">
         <div class="container">
-            <a href="" name="down"></a>
             <div class="about__inner">
                 <div class="who-we">
                     <a href="" name="down"></a>
@@ -114,7 +116,7 @@
                                 Now we are ready to announce that there are two brand new styles available in two different colors, and here they are!
                             </p>
                         </div>
-                        <a href="#">
+                        <a class="comfort__box--btn-a" href="#">
                             <div class="comfort__box--btn">SHOP</div>
                         </a>
                     </div>
@@ -265,12 +267,14 @@
                 <div class="contact__text">
                     If you have any questions feel free to contact us!
                 </div>
-                <form action="contact__form">
-                    <input type="text" placeholder="Your name" required>
-                    <input type="text" placeholder="Your surname" required>
+                <form class="contact__form" action="">
+                    <div class="contact__form--name">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="text" placeholder="Your surname" required>
+                    </div>
                     <input type="text" placeholder="Your email" required>
                     <input type="text" placeholder="phone number" required>
-                    <input type="text" placeholder="write us" required>
+                    <input class="contact__form--write" type="text" placeholder="write us" required> <span>0/320</span>
                     <button>
                         submit
                     </button>
@@ -281,7 +285,43 @@
 
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__links">
+                    <div class="footer__social-links">
+                        <ul>
+                            <li>
+                                <a class="social-link__facebook" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="social-link__instagram" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="social-link__twitter" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__help-links">
+                        <ul>
+                            <li><a href="#">About Ochis</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <a href="">
+                        <img src="images/logo.png" alt="">
+                        <div class="footer__logo-text">
+                            coffee glasses
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__rights">
+                    © 2013-2018 All rights reserved.
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Підключення JQuery  -->
