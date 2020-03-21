@@ -14,18 +14,29 @@
         display: flex;
     }
     
-    // Start Header
-    .header {}
+    header {
+        background-color: #fff;
+        position: relative;
+    }
     
-    .header__inner {
-        height: 100vh;
+    // max-width: 1280px;
+    // margin: 0 auto;
+    // padding: 0 15px;
+    // Start Header
+    .header-container {
+        position: absolute !important;
+        width: 100%;
+        background-color: #fff;
+        z-index: 2;
     }
     
     .header__top {
         display: flex;
         justify-content: space-between;
-        position: relative;
         min-height: 106px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
     
     .header__logo {
@@ -103,7 +114,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        min-height: 87vh;
+        min-height: 100vh;
         position: relative;
     }
     
@@ -145,13 +156,7 @@
         }
     }
     
-    // ABOUT
-    .about {}
-    
-    .container {}
-    
-    .about__inner {}
-    
+    // ABOUT    
     .title {
         font-family: "Pangram-Regular", sans-serif;
         font-style: normal;
@@ -191,7 +196,6 @@
             max-width: 467px;
             text-align: left;
         }
-        .who-we__box-img {}
     }
     
     .comfort__inner {
@@ -246,10 +250,6 @@
         color: #fff;
     }
     
-    .why {}
-    
-    .content {}
-    
     .why__inner {
         display: flex;
         justify-content: space-between;
@@ -260,8 +260,6 @@
         height: 715px;
         margin-top: 260px;
     }
-    
-    .title {}
     
     .why__text {
         max-width: 340px;
@@ -278,8 +276,6 @@
         max-width: 470px;
         margin: 120px 0 100px;
     }
-    
-    .why__item {}
     
     .why__item--title {
         font-family: "Pangram-Regular", sans-serif;
@@ -305,8 +301,6 @@
     .choose {
         background: #EBE3E3;
     }
-    
-    .container {}
     
     .choose__inner {
         display: flex;
@@ -342,7 +336,7 @@
         }
         & .slick-next {
             position: absolute;
-            bottom: 200px;
+            bottom: 370px;
             left: 25px;
             font-size: 0;
             width: 67px;
@@ -482,18 +476,11 @@
     }
     
     .contact__form {
-        display: flex;
+        display: block;
+        max-width: 715px;
+        & input {}
     }
     
     .login__label-name {}
     
     .login__label-pass {}
-    
-    // font-family: Pangram;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 24px;
-    // line-height: 29px;
-    // /* identical to box height */
-    // letter-spacing: 0.05em;
-    // text-transform: uppercase;
