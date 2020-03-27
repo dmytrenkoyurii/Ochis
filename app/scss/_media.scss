@@ -25,6 +25,28 @@
         width: 500px;
         height: 505px;
     }
+    .visit__contacts--head,
+    .visit__form--title {
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .visit__contacts--head {
+        margin-bottom: 30px;
+    }
+    .visit__contacts .visit__contacts--bg {
+        height: 320px;
+        width: 450px;
+    }
+    .visit__contacts {
+        padding-top: 30px;
+    }
+    .visit__form--title {
+        padding-top: 30px;
+    }
+    .visit__form--inner .visit__form--inner--bg {
+        left: -110px;
+        min-height: 600px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -56,6 +78,21 @@
     .why__items {
         margin-right: 10px;
         margin-left: 10px;
+    }
+    .visit__form {
+        max-width: 400px;
+    }
+    .visit__form input {
+        font-size: 20px;
+    }
+    .visit__form .visit__form--name {
+        display: block;
+    }
+    .visit__form .visit__form--name input {
+        width: 100%;
+    }
+    .visit__form .visit__form--name input+input {
+        margin-left: 0px;
     }
 }
 
@@ -147,6 +184,42 @@
     .comfort__box {
         padding-right: 0px;
     }
+    .contact__title {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .footer__inner {
+        display: block;
+    }
+    .footer__help-links ul,
+    .footer__social-links ul {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer__rights {
+        margin-top: 15px;
+    }
+    .footer__logo {
+        margin-left: -115px;
+    }
+}
+
+@media (max-width: 850px) {
+    .visit__contacts--head,
+    .visit__form--title {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .visit__contacts--box {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .visit__contacts .visit__contacts--bg {
+        height: 300px;
+        width: 350px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -201,6 +274,26 @@
         font-size: 18px;
         line-height: 26px;
     }
+    .contact__title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .contact__text {
+        font-size: 22px;
+    }
+    .visit__contacts--head,
+    .visit__form--title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .visit__contacts--box {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .visit__contacts .visit__contacts--bg {
+        height: 250px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -246,6 +339,9 @@
     .choose-slide__box {
         margin: 20px 20px 20px 20px;
     }
+    .visit__form {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -282,6 +378,39 @@
     .why__items {
         margin: 20px 0 20px;
     }
+    .contact__title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .contact__text {
+        font-size: 20px;
+    }
+    .contact__form input {
+        font-size: 20px;
+    }
+    .contact__form .contact__form--product .contact__form--product-select {
+        font-size: 20px;
+    }
+    .contact__form .contact__form--product .contact__form--product-qty {
+        font-size: 20px;
+        & .select-form {
+            font-size: 20px;
+        }
+    }
+    .contact__form .contact__form--product .contact__form--product-select .select-form {
+        padding-left: 90px;
+    }
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-1::before,
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-2::before,
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-3::before {
+        width: 65px;
+        height: 22px;
+    }
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-1:hover:after,
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-2:hover:after,
+    .contact__form .contact__form--product .contact__form--product-select .select-form.form-glass-3:hover:after {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -302,6 +431,14 @@
     }
     .choose-slide img {
         margin-left: 20px;
+    }
+    .visit__contacts {
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+    .visit__contacts .visit__contacts--bg {
+        height: 230px;
+        width: 280px;
     }
 }
 
@@ -324,6 +461,30 @@
     }
     .choose-slide__box--info {
         width: 100%;
+    }
+    .contact__form .contact__form--product {
+        display: block;
+    }
+    .contact__form .contact__form--product .contact__form--product-qty {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .contact__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .contact__text {
+        font-size: 16px;
+    }
+    .visit__form {
+        max-width: 250px;
+    }
+    .visit__form--inner {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .visit__inner {
+        padding-bottom: 100px;
     }
 }
 
@@ -365,6 +526,68 @@
     }
     .who-we__box {
         margin: 0 10px;
+    }
+    .contact__form .contact__form--name {
+        display: block;
+        & input+input {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    .visit__inner {
+        display: block;
+    }
+    .visit-bg-1,
+    .visit-bg-2 {
+        display: none;
+    }
+    .visit__contacts--bg {
+        display: none;
+    }
+    .visit__contacts,
+    .visit__contacts--box a {
+        color: #9B7572;
+    }
+    .visit__contacts,
+    .visit__contacts--box a {
+        padding-top: 0;
+    }
+    .visit__contacts--head,
+    .visit__form--title {
+        margin-bottom: 15px;
+    }
+    .visit__contacts--box div+div {
+        margin-top: 10px;
+    }
+    .visit__form--inner {
+        margin-top: 0px;
+    }
+    .visit__form {
+        max-width: 500px;
+        width: 100%;
+    }
+    .visit__contacts--head,
+    .visit__form--title {
+        & br {
+            display: none;
+        }
+    }
+    .visit__contacts--head,
+    .visit__form--title {
+        text-align: center;
+    }
+    .visit__form--title {
+        margin-bottom: 0;
+    }
+    .visit__form--inner .visit__form--inner--bg {
+        min-height: 500px;
+    }
+    .footer__inner {
+        margin-top: 30px;
+    }
+    .footer__help-links ul {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
