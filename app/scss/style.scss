@@ -48,6 +48,10 @@ header {
     padding-top: 15px;
 }
 
+header__menu--list .header__menu--list {
+    display: block;
+}
+
 .header__menu ul {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -68,8 +72,10 @@ header {
 }
 
 .header__choose {
-    display: flex;
-    a {
+    & .header__choose-basket {
+        display: none;
+    }
+    & .header__choose-a {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -78,39 +84,8 @@ header {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #000000;
+        margin-top: 25px;
     }
-}
-
-.header__choose-a {
-    margin-top: 25px;
-}
-
-.header__choose-basket {
-    position: relative;
-    display: none;
-}
-
-.header__choose-num {
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    background-color: white;
-    border: 1px solid #9B7572;
-    color: #9B7572;
-    border-radius: 50%;
-    bottom: 22px;
-    left: -22px;
-    padding-left: 14px;
-    padding-top: 5px;
-}
-
-.header__choose-bag {
-    background-image: url(../images/header-bag.png);
-    height: 50px;
-    width: 45px;
-    margin-right: 30px;
-    padding-bottom: 10px;
-    margin-top: 23px;
 }
 
 .slide {
@@ -219,6 +194,9 @@ header {
     width: 621px;
     height: 639px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .comfort-bg-1 {
         background-image: url(../images/comfort-bg-1.png);
         position: absolute;
@@ -300,6 +278,10 @@ header {
     margin-top: 100px;
 }
 
+.why__header--display {
+    display: none;
+}
+
 .why__text {
     max-width: 398px;
     font-family: Montserrat;
@@ -345,6 +327,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+}
+
+.choose__inner--title {
+    display: none;
 }
 
 .choose-slider {
@@ -419,7 +405,7 @@ header {
 
 .choose-slide__box {
     width: 220px;
-    margin: 120px 120px 85px 50px;
+    margin: 120px 50px 20px 50px;
 }
 
 .choose-slide__box--num {
@@ -979,3 +965,5 @@ header {
     line-height: 24px;
     color: #6A6A6A;
 }
+
+@import 'media';

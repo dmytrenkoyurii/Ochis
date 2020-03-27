@@ -4,7 +4,7 @@ $(function() {
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 3,
-        autoplay: true,
+        // autoplay: true,
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
@@ -29,26 +29,10 @@ $(function() {
         ]
     });
 
-});
-
-
-$(function() {
-    $.widget("custom.iconselectmenu", $.ui.selectmenu, {
-        _renderItem: function(ul, item) {
-            var li = $("<li>", { html: item.element.html() });
-            var attr = item.element.attr("data-style");
-            if (typeof attr !== typeof undefined && attr !== false) {
-                $("<span>", {
-                    style: item.element.attr("data-style"),
-                    "class": "ui-icon TFOOptlstFiltreImg"
-                }).appendTo(li);
-            }
-            return li.appendTo(ul);
-        }
+    $('.header__menu--btn').on('click', function() {
+        $('.header__menu--list').slideToggle();
     });
 
-    $("#people")
-        .iconselectmenu().iconselectmenu("menuWidget").addClass("ui-menu-icons");
 });
 
 
